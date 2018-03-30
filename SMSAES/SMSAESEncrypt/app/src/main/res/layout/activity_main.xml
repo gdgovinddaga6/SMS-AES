@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.harikesh.smsaes.MainActivity">
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="438dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="TO:"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="358dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Key"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to"/>
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="375dp"
+        android:layout_height="281dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="9dp"
+        android:text="Send"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg"/>
+</android.support.constraint.ConstraintLayout>
